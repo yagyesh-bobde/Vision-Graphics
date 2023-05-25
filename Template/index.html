@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Web</title>
+    
+    <!-- Link to css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Material Icons Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <!-- Add opencv -->
+    <script async src="../Resources/opencv.js" onload="openCvReady()" ></script>
+</head>
+<body>
+    <div class="main-page">
+        <!-- Slide line -->
+        <div class="slide-line">
+
+        </div>
+        <!-- Slide bar -->
+        <div class="slide-bar">
+            <span class="circle">
+                <i class="material-icons" style="font-size: 36px;color: white;">settings</i></span>
+            <span class="circle">
+                <i class="material-icons" style="font-size: 36px;color: white;">info</i></span>
+                <span class="circle"><i class="material-icons" style="font-size: 36px;color: white;">visibility</i></span>
+                <span class="circle"><i class="material-icons" style="font-size: 36px;color: white;">auto_fix_normal</i></span>
+                <span class="circle blue"><i class="material-icons " style="font-size: 36px;color: white;">videocam</i></span>
+
+        </div>
+        <!-- Right panel -->
+        <div class="right-panel">
+            <!-- Header -->
+            <div class="header">
+                <div class="empty-side"></div>
+                <h1>CV Web</h1>
+                <div class="logo-container">
+                    <img src="../Resources/Template/Logo.png" alt="logo" width="120">
+                </div>
+            </div>
+
+
+            <!-- Tablet Container -->
+            <div class="tablet-container">
+                <img id="table-image" src="../Resources/Template/tablet.png"
+                     alt="tablet frame"
+                     width="1050"
+                     height="780">
+                <canvas id="main-canvas">
+                    <img 
+                    id="img-main" 
+                    src="../Resources/Template/car.png" 
+                    alt="car image"
+                    width="950"
+                    height="700">
+                </canvas>
+            </div>
+        </div>
+
+        
+    </div>
+    <!-- Link JS -->
+    <script src="main.js"></script>
+</body>
+</html>
