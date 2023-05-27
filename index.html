@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Web</title>
+    
+    <!-- Link to css -->
+    <link rel="stylesheet" href="./Template/style.css">
+    <!-- Material Icons Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <!-- Add opencv -->
+    <script async src="/Resources/opencv.js" onload="openCvReady()" ></script>
+</head>
+<body>
+    <div class="main-page">
+        <!-- Slide line -->
+        <div class="slide-line">
+        
+        </div>
+       
+        <!-- Right panel -->
+        <div class="right-panel">
+            <!-- Header -->
+            <div class="header">
+                <!-- <div class="empty-side"></div> -->
+                <h1>Developers Zone 🚀</h1>
+                <!-- <div class="logo-container">
+                    <img src="/Resources/Template/Logo.png" alt="logo" width="120">
+                </div> -->
+            </div>
+
+
+            <!-- Tablet Container -->
+            <div class="tablet-container">
+                <img id="table-image" src="/Resources/Template/tablet.png"
+                     alt="tablet frame"
+                     width="1080"
+                     height="640">
+                <canvas id="main-canvas">
+                    <img 
+                    id="img-main" 
+                    src="/Resources/Template/car.png" 
+                    alt="car image"
+                    width="980"
+                    height="580">
+                </canvas>
+                <div id="file-upload" class="file-upload" >
+                    <span class="material-icons">
+                        add_photo_alternate
+                    </span>
+                    <label for="input-file">Upload Image</label>
+                    <input type="file" name="input-file" id="input-file" accept="image/jpg, image/jpeg , image/png">
+                </div>
+            </div>
+        </div>
+
+<!-- Slide bar -->
+<div class="slide-bar">
+    <span id="btn-rgb"
+          class="circle">
+        <i class="material-icons"
+           style="font-size: 36px;color: white;">palette</i>
+    </span>
+    <span id="btn-gray"
+          class="circle">
+        <i class="material-icons"
+           style="font-size: 36px;color: white;">contrast</i>
+    </span>
+    <span id="btn-blur"
+          class="circle"><i class="material-icons"
+           style="font-size: 36px;color: white;">visibility</i>
+    </span>
+    <span id="btn-canny"
+          class="circle"><i class="material-icons"
+           style="font-size: 36px;color: white;">auto_fix_normal</i>
+    </span>
+    <!-- <span id="btn-" class="circle blue" onclick="uploadToggle()" ><i class="material-icons " style="font-size: 36px;color: white;">upload</i> -->
+    </span>
+
+</div>
+
+        
+        
+    </div>
+    <!-- Link JS -->
+    <script src="/Template/main.js"></script>
+</body>
+</html>

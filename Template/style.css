@@ -48,6 +48,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 256ms;
+}
+.circle:hover, .circle:active{ 
+    cursor: pointer;
+    background-color: var(--bg-side-line);
 }
 
 .circle.blue{ 
@@ -66,10 +71,12 @@ body{
 .header{ 
     background-color: var(--bg-side-line);
     display : flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     align-items: center;
     padding: 1% 5%;
     box-shadow: var(--box-shadow);
+    color: white;
 }
 
 .logo-container {
@@ -94,5 +101,42 @@ body{
 }
 .tablet-container #table-image{ 
     position: absolute;
-    z-index: 2;
+    
+}
+.tablet-container canvas ,.tablet-container canvas img{ 
+    z-index: 4;
+}
+.file-upload{ 
+    z-index: 5;
+    position: absolute;
+    min-width: 700px;
+    min-height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border : 5px dashed #37c9ef;
+    display: none;
+}
+
+.showupload{
+    display: flex;
+}
+
+.file-upload span { 
+    font-size: 5rem;
+}
+.tablet-container label , .tablet-container input{ 
+    z-index: 3;
+}
+.tablet-container input{ 
+    display: none;
+}
+.tablet-container label{ 
+    box-shadow: var(--box-shadow);
+    padding: 1% 2%;
+    background-color: orangered;
+    color: white;
+    font-size: 2rem;
+    margin: 5% 0;
+    font-weight: 600;
 }
